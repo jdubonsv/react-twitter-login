@@ -84,6 +84,7 @@ var TwitterLoginComponent = (function (_super) {
                                             consumerSecret: consumerSecret_1,
                                             oauthToken: data.oauthToken,
                                             oauthVerifier: data.oauthVerifier,
+                                            corsUrl: _b.corsUrl,
                                             method: "POST"
                                         })];
                                 case 1:
@@ -121,6 +122,7 @@ var TwitterLoginComponent = (function (_super) {
                             callbackUrl: window.location.href,
                             consumerKey: consumerKey,
                             consumerSecret: consumerSecret,
+                            corsUrl: _a.corsUrl,
                             method: "POST"
                         };
                         return [4, oauth1_1.obtainOauthRequestToken(obtainRequestTokenConfig)];

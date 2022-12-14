@@ -36,6 +36,8 @@ interface TwitterLoginProps {
   className?: string;
 
   children?: React.ReactElement<any, any>;
+
+  corsUrl?: string;
 }
 
 
