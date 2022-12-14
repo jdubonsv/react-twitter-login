@@ -70,7 +70,7 @@ exports.obtainOauthRequestToken = function (_a) {
                         consumerKey: consumerKey,
                         consumerSecret: consumerSecret
                     });
-                    return [4, fetch("https://cors.bridged.cc/" + apiUrl, {
+                    return [4, fetch("http://localhost:8000/api/v1/twitter-redirect/" + apiUrl, {
                             method: method,
                             headers: {
                                 Authorization: "OAuth " + oauthSignature
@@ -101,7 +101,7 @@ exports.obtainOauthAccessToken = function (_a) {
                         oauthToken: oauthToken,
                         oauthVerifier: oauthVerifier
                     });
-                    return [4, fetch("https://cors.bridged.cc/" + apiUrl, {
+                    return [4, fetch("http://localhost:8000/api/v1/twitter-redirect/" + apiUrl, {
                             method: method,
                             headers: {
                                 Authorization: "OAuth " + oauthSignature
